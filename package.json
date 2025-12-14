@@ -1,0 +1,16 @@
+{
+  "name": "hsstat",
+  "version": "1.0.0",
+  "description": "Polls Headscale API, transforms JSON, serves cached result for Homepage",
+  "type": "module",
+  "private": true,
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.3"
+  }
+}
