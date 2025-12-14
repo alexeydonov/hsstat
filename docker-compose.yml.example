@@ -1,0 +1,14 @@
+services:
+  hsstat:
+    build: .
+    container_name: hsstat
+    env_file:
+      - .env
+    volumes:
+      - hsstat-data:/app/data
+    exposes:
+      - 3000
+    restart: unless-stopped
+
+volumes:
+  hsstat-data:
